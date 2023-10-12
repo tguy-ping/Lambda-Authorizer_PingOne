@@ -1,5 +1,10 @@
-# Lambda-Authorizer_PingOne
-Setup steps:
+## Description
+**_NOT FOR PRODUCTION USE_**
+
+This repo contains the code for an AWS Lambda function to be used as an API Gateway authorizer. The function will validate ('locally' or using PingOne's token introspection endpoint) bearer tokens and return an AWS IAM Policy as appropriate. Update the `apiPermissions` object in the `awsPolicy.js` file to fit your use-case.
+## Setup steps:
+**_NOT FOR PRODUCTION USE_**
+
 1. [Create a custom resource in your PingOne environment to represent your AWS API](https://docs.pingidentity.com/r/en-us/pingone/p1_t_addresource)
 2. Download this repo as a zip file
 3. Create a new Lambda function (tested with the 'Author from scratch' option)
